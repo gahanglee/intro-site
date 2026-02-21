@@ -260,20 +260,7 @@ main {
   color: var(--text);
 }
 
-/*=========  加入圖像 =================*/
-.page-block{
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 24px 20px;
-}
 
-.page-image{
-  display:block;
-  width:100%;
-  height:auto;
-  margin-top:16px;
-  border-radius:16px;
-}
 
 /* ===== 關於 ===== */
 .about-content {
@@ -574,5 +561,6 @@ main {
   background: rgba(255, 255, 255, 0.98);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
+
 
 
