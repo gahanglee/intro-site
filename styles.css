@@ -317,9 +317,8 @@ main {
   opacity: 0.85;
 }
 
-
-/* =======圖片======= */
-.integration-section{
+/* 防止標題被硬切成兩行（你看到「跨領域整 / 合」就是這個） */
+.page-integration .integration-section{
   display:flex;
   align-items:center;
   gap:40px;
@@ -328,13 +327,20 @@ main {
   padding:0 20px;
 }
 
-.integration-image img{
+.page-integration .integration-image img{
   width:420px;
   border-radius:16px;
+  height:auto;
+  display:block;
 }
 
-.integration-text{
+.page-integration .integration-text{
   flex:1;
+}
+
+/* 防止標題被硬切成兩行（你看到「跨領域整 / 合」就是這個） */
+.page-integration .integration-text h1{
+  white-space:nowrap;
 }
 
 /* ===== 聯絡 ===== */
@@ -561,6 +567,7 @@ main {
   background: rgba(255, 255, 255, 0.98);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
+
 
 
 
