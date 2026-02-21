@@ -330,6 +330,26 @@ main {
   opacity: 0.85;
 }
 
+
+/* =======圖片======= */
+.integration-section{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  max-width:1000px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.integration-image img{
+  width:420px;
+  border-radius:16px;
+}
+
+.integration-text{
+  flex:1;
+}
+
 /* ===== 聯絡 ===== */
 .contact-text {
   color: var(--text-muted);
@@ -554,4 +574,5 @@ main {
   background: rgba(255, 255, 255, 0.98);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
+
 
