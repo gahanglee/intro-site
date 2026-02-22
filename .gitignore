@@ -1,3 +1,16 @@
+# 金鑰與機密（切勿 commit 上傳）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*credentials*
+*.secret
+secrets/
+keys/
+credentials/
+
 # 系統與編輯器
 .DS_Store
 Thumbs.db

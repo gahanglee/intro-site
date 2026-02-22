@@ -409,7 +409,7 @@ main {
   margin-bottom: 0;
 }
 
-/* 專長詳情頁：左圖右文 */
+/* 專長詳情頁：左圖右文（圖片上緣對齊右側標題） */
 .detail-layout {
   display: grid;
   grid-template-columns: minmax(200px, 320px) 1fr;
@@ -433,6 +433,7 @@ main {
   .detail-layout {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    align-items: start;
   }
   .detail-figure {
     position: static;
