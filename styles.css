@@ -573,23 +573,23 @@ main {
 
 /* 碩士論文研究頁：配色取自桌面桌布（天空藍、奶油白、淡粉、薰衣草灰） */
 .page-research {
-  --rs-sky: #d1e4ea;
-  --rs-sky-soft: #e8f2f5;
-  --rs-cream: #f9f4eb;
-  --rs-blush: #f4d1c3;
-  --rs-blush-soft: #fbece5;
-  --rs-lilac: #c8bcbb;
-  --rs-lilac-soft: #eeeaea;
-  --rs-star: #faebcc;
-  --rs-ink: #33434d;
+  --rs-sky: #cfe8e1;
+  --rs-sky-soft: #e1f1ea;
+  --rs-cream: #eef6f2;
+  --rs-blush: #f2c9ae;
+  --rs-blush-soft: #fbe9dd;
+  --rs-lilac: #bfddc6;
+  --rs-lilac-soft: #e3f1e4;
+  --rs-star: #dcefe7;
+  --rs-ink: #22323b;
   --rs-ink-muted: #5d6d76;
-  --rs-accent: #3f7489;
+  --rs-accent: #1f7a7a;
   background: linear-gradient(180deg, var(--rs-sky) 0%, var(--rs-sky-soft) 28%, var(--rs-cream) 60%);
   background-attachment: fixed;
   color: var(--rs-ink);
 }
 .page-research .noise { display: none; }
-.page-research .nav { background: rgba(249, 244, 235, 0.85); backdrop-filter: blur(8px); }
+.page-research .nav { background: rgba(242, 249, 245, 0.9); backdrop-filter: blur(8px); }
 .page-research .nav-logo, .page-research .nav-links a { color: var(--rs-ink); }
 .page-research .nav-links a:hover { color: var(--rs-accent); }
 .page-research .footer { background: transparent; color: var(--rs-ink-muted); }
@@ -604,8 +604,8 @@ main {
 .rs-back { display: inline-block; color: var(--rs-ink-muted); text-decoration: none; font-size: 0.95rem; margin-bottom: 1.5rem; }
 .rs-back:hover { color: var(--rs-accent); }
 
-.rs-hero { background: rgba(255, 255, 255, 0.72); border-radius: 28px; padding: 2.5rem 2rem; box-shadow: 0 8px 32px rgba(63, 116, 137, 0.10); margin-bottom: 2.5rem; }
-.rs-eyebrow { font-size: 0.9rem; font-weight: 700; color: var(--rs-accent); letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+.rs-hero { background: rgba(255, 255, 255, 0.72); border-radius: 28px; padding: 2.5rem 2rem; box-shadow: 0 8px 32px rgba(31, 122, 122, 0.10); margin-bottom: 2.5rem; }
+.rs-eyebrow { font-size: 0.9rem; font-weight: 700; color: #c9632a; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
 .rs-title { font-family: var(--serif); font-size: clamp(1.8rem, 4.5vw, 2.6rem); line-height: 1.3; color: var(--rs-ink); margin-bottom: 1rem; }
 .rs-fulltitle { font-size: 1.05rem; line-height: 1.8; color: var(--rs-ink); margin-bottom: 0.75rem; }
 .rs-meta { font-size: 0.95rem; color: var(--rs-ink-muted); }
@@ -616,7 +616,7 @@ main {
 
 .rs-questions { list-style: none; display: grid; gap: 0.9rem; }
 .rs-questions li { display: flex; gap: 1rem; align-items: flex-start; background: var(--rs-cream); border-radius: 16px; padding: 1rem 1.25rem; }
-.rs-num { flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: var(--rs-sky); color: var(--rs-ink); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.rs-num { flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: var(--rs-blush-soft); color: #b4551f; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .rs-questions p { line-height: 1.8; }
 
 .rs-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
