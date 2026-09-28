@@ -9,11 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-nano page-research">
+<body class="page-research">
   <div class="noise"></div>
-  <div class="gradient-orb orb-1"></div>
-  <div class="gradient-orb orb-2"></div>
-  <div class="gradient-orb orb-3"></div>
+  <div class="rs-sky" aria-hidden="true"><span class="rs-cloud c1"></span><span class="rs-cloud c2"></span><span class="rs-cloud c3"></span></div>
 
   <nav class="nav">
     <a href="index.html" class="nav-logo">嘉晃</a>
@@ -30,50 +28,76 @@
     </button>
   </nav>
 
-  <main class="detail-main">
-    <a href="index.html#skills" class="detail-back">← 回到專長</a>
-    <div class="detail-layout">
-      <figure class="detail-figure">
-        <img src="images/assistive-tech.png" alt="輔助科技示意圖" class="detail-img" />
-      </figure>
-      <article class="detail-article">
-        <h1 class="detail-title">碩士論文研究</h1>
-        <div class="detail-content">
-          <p class="research-title">RULER模式融入輔助科技情緒學習APP支持學前特殊需求幼兒情緒能力之協同行動研究：社會情緒學習通用設計觀點</p>
-          <p>國立臺南大學特殊教育學系輔助科技碩士班．論文計畫階段</p>
+  <main class="rs-main">
+    <a href="index.html#skills" class="rs-back">← 回到專長</a>
 
-          <h2>研究想回答的問題</h2>
-          <ul>
-            <li>普通班教師與學前特殊教育教師如何共同發展與修正情緒學習 APP 及教學活動？</li>
-            <li>幼兒在情緒的辨識、理解、標記、表達與調節五方面，呈現哪些個別變化？</li>
-            <li>幼兒如何把 APP 裡學到的情緒詞彙與調節策略，用在幼兒園的日常生活？</li>
-            <li>教師在協作中遇到哪些問題、做了哪些調整、產生哪些反思？</li>
-          </ul>
+    <header class="rs-hero">
+      <p class="rs-eyebrow">碩士論文研究．論文計畫階段</p>
+      <h1 class="rs-title">情緒島 APP 與學前情緒學習</h1>
+      <p class="rs-fulltitle">RULER模式融入輔助科技情緒學習APP支持學前特殊需求幼兒情緒能力之協同行動研究：社會情緒學習通用設計觀點</p>
+      <p class="rs-meta">國立臺南大學特殊教育學系輔助科技碩士班</p>
+    </header>
 
-          <h2>三個觀點的分工</h2>
-          <ul>
-            <li><strong>RULER</strong>：界定要支持的五項情緒能力。</li>
-            <li><strong>UDL 與社會情緒學習通用設計（UDSEL）</strong>：檢視活動中的參與障礙，包括感官與操作、情緒安全、語言與回應方式、執行功能。</li>
-            <li><strong>神經多樣性</strong>：提醒目標不在消除差異，而在擴充幼兒表達、選擇與參與的機會。</li>
-          </ul>
+    <section class="rs-section">
+      <h2 class="rs-h2">研究想回答的問題</h2>
+      <ol class="rs-questions">
+        <li><span class="rs-num">1</span><p>普通班教師與學前特殊教育教師如何共同發展與修正情緒學習 APP 及教學活動？</p></li>
+        <li><span class="rs-num">2</span><p>幼兒在情緒的辨識、理解、標記、表達與調節五方面，呈現哪些個別變化？</p></li>
+        <li><span class="rs-num">3</span><p>幼兒如何把 APP 裡學到的情緒詞彙與調節策略，用在幼兒園的日常生活？</p></li>
+        <li><span class="rs-num">4</span><p>教師在協作中遇到哪些問題、做了哪些調整、產生哪些反思？</p></li>
+      </ol>
+    </section>
 
-          <h2>情緒島 APP</h2>
-          <p>情緒島以「我覺得、我想要、我可以」三個步驟，帶幼兒在生活情境中辨識感受、說出需要、選擇調節策略，內含情緒卡、身體反應卡與策略卡。APP 定位為輔助科技，搭配教師引導使用，不自動推測幼兒的內在情緒，也不做診斷。</p>
-          <p>1.1.0 版起，教師可在每個步驟記錄提示層級（0 到 4 級）與幼兒的回應方式（點選、指認、AAC、口語等）；幼兒平日使用的 AAC 保留使用，不視為提高提示層級。</p>
+    <section class="rs-section">
+      <h2 class="rs-h2">三個觀點的分工</h2>
+      <div class="rs-cards">
+        <article class="rs-card rs-sky-card">
+          <h3>RULER</h3>
+          <p>界定要支持的五項情緒能力：辨識、理解、標記、表達、調節。</p>
+        </article>
+        <article class="rs-card rs-blush-card">
+          <h3>UDL 與 UDSEL</h3>
+          <p>檢視活動中的參與障礙：感官與操作、情緒安全、語言與回應方式、執行功能。</p>
+        </article>
+        <article class="rs-card rs-lilac-card">
+          <h3>神經多樣性</h3>
+          <p>目標不在消除差異，而在擴充幼兒表達、選擇與參與的機會。</p>
+        </article>
+      </div>
+    </section>
 
-          <h2>研究方法</h2>
-          <p>採實踐取向的協同行動研究，在一所幼兒園融合情境進行十二週、三次行動循環。資料包括教師與家長訪談、觀察紀錄、APP 使用紀錄與版本文件，以主題分析整理，並以不同資料來源、方法與觀點進行三角檢證。</p>
-          <h2>線上體驗與相關工具</h2>
-          <ul>
-            <li><a href="https://emotion-island-nu.vercel.app" target="_blank" rel="noopener noreferrer">情緒島 APP 線上體驗</a></li>
-            <li><a href="https://gahanglee.github.io/#wheel" target="_blank" rel="noopener noreferrer">情緒輪盤</a>：點選色塊認識不同感受與對應策略</li>
-            <li><a href="https://gahanglee.github.io/sunflower-breathing/" target="_blank" rel="noopener noreferrer">太陽花呼吸練習</a>：跟著畫面與語音練習呼吸</li>
-            <li><a href="https://gahanglee.github.io/" target="_blank" rel="noopener noreferrer">嘉晃的主站</a>：教材作品集、部落格與更多介紹</li>
-          </ul>
-          <p class="research-note">本頁介紹研究設計，不公開任何幼兒或教師的個人資料。</p>
-        </div>
-      </article>
-    </div>
+    <section class="rs-section">
+      <h2 class="rs-h2">情緒島 APP</h2>
+      <div class="rs-steps">
+        <div class="rs-step"><span class="rs-step-label">我覺得</span><p>辨識並說出感受</p></div>
+        <div class="rs-step"><span class="rs-step-label">我想要</span><p>表達自己的需要</p></div>
+        <div class="rs-step"><span class="rs-step-label">我可以</span><p>選擇調節策略</p></div>
+      </div>
+      <p>APP 內含情緒卡、身體反應卡與策略卡，定位為輔助科技，搭配教師引導使用，不自動推測幼兒的內在情緒，也不做診斷。</p>
+      <p>1.1.0 版起，教師可在每個步驟記錄提示層級（0 到 4 級）與幼兒的回應方式（點選、指認、AAC、口語等）；幼兒平日使用的 AAC 保留使用，不視為提高提示層級。</p>
+    </section>
+
+    <section class="rs-section">
+      <h2 class="rs-h2">研究方法</h2>
+      <ol class="rs-timeline">
+        <li><strong>準備與初始觀察</strong><span>先導訪談教師，建立幼兒起點資料</span></li>
+        <li><strong>行動循環一至三</strong><span>計畫、行動、觀察、反思，每一循環依資料修訂 APP 與活動</span></li>
+        <li><strong>整合與後期觀察</strong><span>訪談家長與教師，觀察自然情境中的運用</span></li>
+      </ol>
+      <p>採實踐取向的協同行動研究，為期十二週。資料包括訪談、觀察紀錄、APP 使用紀錄與版本文件，以主題分析整理，並以不同資料來源、方法與觀點進行三角檢證。</p>
+    </section>
+
+    <section class="rs-section">
+      <h2 class="rs-h2">線上體驗與相關工具</h2>
+      <div class="rs-links">
+        <a class="rs-link" href="https://emotion-island-nu.vercel.app" target="_blank" rel="noopener noreferrer"><strong>情緒島 APP 線上體驗</strong><span>在瀏覽器直接試玩</span></a>
+        <a class="rs-link" href="https://gahanglee.github.io/#wheel" target="_blank" rel="noopener noreferrer"><strong>情緒輪盤</strong><span>點選色塊認識感受與對應策略</span></a>
+        <a class="rs-link" href="https://gahanglee.github.io/sunflower-breathing/" target="_blank" rel="noopener noreferrer"><strong>太陽花呼吸練習</strong><span>跟著畫面與語音練習呼吸</span></a>
+        <a class="rs-link" href="https://gahanglee.github.io/" target="_blank" rel="noopener noreferrer"><strong>嘉晃的主站</strong><span>教材作品集、部落格與更多介紹</span></a>
+      </div>
+    </section>
+
+    <p class="rs-note">本頁介紹研究設計，不公開任何幼兒或教師的個人資料。</p>
   </main>
 
   <footer class="footer">

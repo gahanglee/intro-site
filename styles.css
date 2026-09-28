@@ -571,22 +571,88 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-
-
-
-
-
-/* 碩士論文研究頁 */
-.page-research .detail-article { max-width: 640px; }
-.page-research .research-title {
-  font-family: 'Noto Serif TC', serif;
-  font-size: 1.15rem; font-weight: 600; color: #1a1a1a; line-height: 1.6;
+/* 碩士論文研究頁：配色取自桌面桌布（天空藍、奶油白、淡粉、薰衣草灰） */
+.page-research {
+  --rs-sky: #d1e4ea;
+  --rs-sky-soft: #e8f2f5;
+  --rs-cream: #f9f4eb;
+  --rs-blush: #f4d1c3;
+  --rs-blush-soft: #fbece5;
+  --rs-lilac: #c8bcbb;
+  --rs-lilac-soft: #eeeaea;
+  --rs-star: #faebcc;
+  --rs-ink: #33434d;
+  --rs-ink-muted: #5d6d76;
+  --rs-accent: #3f7489;
+  background: linear-gradient(180deg, var(--rs-sky) 0%, var(--rs-sky-soft) 28%, var(--rs-cream) 60%);
+  background-attachment: fixed;
+  color: var(--rs-ink);
 }
-.page-research .detail-content h2 {
-  font-size: 1.15rem; font-weight: 700; color: #1a1a1a;
-  margin: 2.25rem 0 0.75rem;
+.page-research .noise { display: none; }
+.page-research .nav { background: rgba(249, 244, 235, 0.85); backdrop-filter: blur(8px); }
+.page-research .nav-logo, .page-research .nav-links a { color: var(--rs-ink); }
+.page-research .nav-links a:hover { color: var(--rs-accent); }
+.page-research .footer { background: transparent; color: var(--rs-ink-muted); }
+
+.rs-sky { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+.rs-cloud { position: absolute; background: rgba(255, 255, 255, 0.7); border-radius: 999px; filter: blur(2px); }
+.rs-cloud.c1 { width: 280px; height: 70px; top: 110px; left: -60px; }
+.rs-cloud.c2 { width: 200px; height: 56px; top: 220px; right: -40px; }
+.rs-cloud.c3 { width: 160px; height: 44px; top: 60px; right: 22%; opacity: 0.6; }
+
+.rs-main { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 7rem 1.25rem 4rem; }
+.rs-back { display: inline-block; color: var(--rs-ink-muted); text-decoration: none; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.rs-back:hover { color: var(--rs-accent); }
+
+.rs-hero { background: rgba(255, 255, 255, 0.72); border-radius: 28px; padding: 2.5rem 2rem; box-shadow: 0 8px 32px rgba(63, 116, 137, 0.10); margin-bottom: 2.5rem; }
+.rs-eyebrow { font-size: 0.9rem; font-weight: 700; color: var(--rs-accent); letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+.rs-title { font-family: var(--serif); font-size: clamp(1.8rem, 4.5vw, 2.6rem); line-height: 1.3; color: var(--rs-ink); margin-bottom: 1rem; }
+.rs-fulltitle { font-size: 1.05rem; line-height: 1.8; color: var(--rs-ink); margin-bottom: 0.75rem; }
+.rs-meta { font-size: 0.95rem; color: var(--rs-ink-muted); }
+
+.rs-section { background: rgba(255, 255, 255, 0.6); border-radius: 24px; padding: 2rem; margin-bottom: 1.75rem; }
+.rs-section > p { line-height: 1.9; margin-top: 1rem; color: var(--rs-ink); }
+.rs-h2 { font-family: var(--serif); font-size: 1.4rem; color: var(--rs-ink); margin-bottom: 1.25rem; padding-left: 0.75rem; border-left: 5px solid var(--rs-sky); }
+
+.rs-questions { list-style: none; display: grid; gap: 0.9rem; }
+.rs-questions li { display: flex; gap: 1rem; align-items: flex-start; background: var(--rs-cream); border-radius: 16px; padding: 1rem 1.25rem; }
+.rs-num { flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: var(--rs-sky); color: var(--rs-ink); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.rs-questions p { line-height: 1.8; }
+
+.rs-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.rs-card { border-radius: 20px; padding: 1.4rem; }
+.rs-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--rs-ink); }
+.rs-card p { line-height: 1.8; font-size: 0.98rem; }
+.rs-sky-card { background: var(--rs-sky-soft); border: 2px solid var(--rs-sky); }
+.rs-blush-card { background: var(--rs-blush-soft); border: 2px solid var(--rs-blush); }
+.rs-lilac-card { background: var(--rs-lilac-soft); border: 2px solid var(--rs-lilac); }
+
+.rs-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.rs-step { background: var(--rs-star); border-radius: 18px; padding: 1.1rem; text-align: center; }
+.rs-step-label { display: block; font-family: var(--serif); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.25rem; }
+.rs-step p { font-size: 0.95rem; color: var(--rs-ink-muted); }
+
+.rs-timeline { list-style: none; position: relative; padding-left: 1.75rem; }
+.rs-timeline::before { content: ""; position: absolute; left: 0.45rem; top: 0.4rem; bottom: 0.4rem; width: 3px; background: var(--rs-sky); border-radius: 3px; }
+.rs-timeline li { position: relative; margin-bottom: 1.1rem; }
+.rs-timeline li::before { content: ""; position: absolute; left: -1.6rem; top: 0.45rem; width: 0.9rem; height: 0.9rem; border-radius: 50%; background: #fff; border: 3px solid var(--rs-accent); }
+.rs-timeline strong { display: block; font-size: 1.05rem; }
+.rs-timeline span { color: var(--rs-ink-muted); line-height: 1.7; }
+
+.rs-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.9rem; }
+.rs-link { display: block; text-decoration: none; background: #fff; border: 2px solid var(--rs-sky); border-radius: 18px; padding: 1.1rem 1.25rem; color: var(--rs-ink); transition: transform 0.2s var(--ease-out), border-color 0.2s; }
+.rs-link:hover, .rs-link:focus-visible { transform: translateY(-3px); border-color: var(--rs-accent); }
+.rs-link:focus-visible { outline: 3px solid var(--rs-accent); outline-offset: 3px; }
+.rs-link strong { display: block; color: var(--rs-accent); margin-bottom: 0.25rem; }
+.rs-link span { font-size: 0.92rem; color: var(--rs-ink-muted); }
+
+.rs-note { text-align: center; font-size: 0.9rem; color: var(--rs-ink-muted); margin-top: 1rem; }
+
+@media (max-width: 640px) {
+  .rs-main { padding-top: 6rem; }
+  .rs-hero, .rs-section { padding: 1.5rem 1.25rem; border-radius: 20px; }
+  .rs-steps { grid-template-columns: 1fr; }
 }
-.page-research .detail-content ul { padding-left: 1.25rem; margin-bottom: 1.5rem; }
-.page-research .detail-content li { margin-bottom: 0.5rem; }
-.page-research .detail-content a { color: var(--accent); }
-.page-research .research-note { font-size: 0.9rem; color: #777; }
+@media (prefers-reduced-motion: reduce) {
+  .rs-link { transition: none; }
+}
