@@ -575,3 +575,18 @@ main {
 
 
 
+
+/* 碩士論文研究頁 */
+.page-research .detail-article { max-width: 640px; }
+.page-research .research-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.15rem; font-weight: 600; color: #1a1a1a; line-height: 1.6;
+}
+.page-research .detail-content h2 {
+  font-size: 1.15rem; font-weight: 700; color: #1a1a1a;
+  margin: 2.25rem 0 0.75rem;
+}
+.page-research .detail-content ul { padding-left: 1.25rem; margin-bottom: 1.5rem; }
+.page-research .detail-content li { margin-bottom: 0.5rem; }
+.page-research .detail-content a { color: var(--accent); }
+.page-research .research-note { font-size: 0.9rem; color: #777; }
